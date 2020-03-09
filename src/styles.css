@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@media(min-width:1200px){
+    .container{
+        width: 1160px;
+        margin: 0 auto;
+    }
+}
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
