@@ -7,6 +7,7 @@ import { CoreModule } from './core/core.module';
 import { CidadesModule } from './cidades/cidades.module';
 import { RouterModule, Routes } from '@angular/router';
 import { CidadesPesquisaComponent } from './cidades/cidades-pesquisa/cidades-pesquisa.component';
+import { CidadesService } from './cidades/cidades.service';
 
 const routes:Routes=[
   {path:'cidades', component: CidadesPesquisaComponent}
@@ -23,7 +24,7 @@ const routes:Routes=[
     CoreModule,
     CidadesModule
   ],
-  providers: [],
+  providers: [CidadesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
